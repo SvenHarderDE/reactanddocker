@@ -3,7 +3,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t SvenHarderDE/reactanddocker -f Dockerfile.dev .
+  - docker build -t svenharder/reactanddocker -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true SvenHarderDE/reactanddocker npm run test
+  - docker run -e CI=true svenharder/reactanddocker npm run test
