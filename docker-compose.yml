@@ -9,6 +9,7 @@ services:
     volumes: 
       - /app/node_modules
       - .:/app
+    stdin_open: true
   tests:
     build:
       context: .
