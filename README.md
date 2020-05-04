@@ -1,5 +1,5 @@
 ## Start docker development server
-docker run -p 3000:3000 -v /app/node_modules -v $(pwd):/app <image-id>
+docker run -it -p 3000:3000 -v /app/node_modules -v $(pwd):/app <image-id>
 docker-compose up
 
 ## Testing
