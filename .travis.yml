@@ -8,3 +8,14 @@ before_install:
 
 script:
   - docker run -e CI=true svenharder/reactanddocker npm run test
+
+deploy:
+  provider: elasticbeanstalk
+  region: "us-west-2"
+  app: "dockerreactudemy"
+  env: "Dockerreactudemy-env"
+  bucket_name: "dockerreactudemy"
+  on:
+    branch: master
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key: $AWS_SECRET_KEY
