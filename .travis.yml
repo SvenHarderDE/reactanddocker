@@ -14,7 +14,8 @@ deploy:
   region: "us-west-2"
   app: "dockerreactudemy"
   env: "Dockerreactudemy-env"
-  bucket_name: "dockerreactudemy"
+  bucket_name: "elasticbeanstalk-us-west-2-477761403318"
+  bucket_path: "dockerreactudemy"
   on:
     branch: master
   access_key_id: $AWS_ACCESS_KEY
