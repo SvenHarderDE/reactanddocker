@@ -12,7 +12,7 @@ script:
 deploy:
   provider: elasticbeanstalk
   region: "us-west-2"
-  app: "reactanddocker"
+  app: "dockerreactudemy"
   env: "Dockerreactudemy-env"
   bucket_name: "dockerreactudemy"
   on:
